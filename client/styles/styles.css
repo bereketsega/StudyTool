@@ -1,0 +1,121 @@
+body {
+  background-color: #f6f9ff;
+  margin: 0;
+  padding: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  height: 100vh;
+}
+#bodyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+#firstHeader,
+#secondHeader {
+  text-align: center;
+  color: #00144d;
+}
+h3 {
+  margin-bottom: 0px;
+}
+#uploadForm {
+  padding: 10px;
+  background-color: #f6f9fe;
+}
+#fileInputContainer {
+  border: 1px #00144d dashed;
+  background-color: #f8fbff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+#fileInput {
+  padding: 5px;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+  border-radius: 4px;
+  padding: 4px 5px;
+  cursor: pointer;
+  background-color: white;
+  color: #00144d;
+  border: 1px solid #00144d;
+}
+
+input[type="file"]::file-selector-button:active {
+  background-color: #bfbfc0;
+}
+
+#generateButtonContianer,
+#submitButtonContianer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  margin-top: 10px;
+}
+#submitButtonContianer {
+  margin-bottom: 30px;
+}
+
+#generateButton:active,
+#submitButton:active {
+  background-color: #113db6;
+}
+
+#generateButton,
+#submitButton {
+  background-color: #3365ef;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.correct {
+  color: green;
+}
+.incorrect {
+  color: red;
+}
+#questionContainer {
+  margin-left: 6px;
+  margin-right: 6px;
+  padding-left: 1em;
+  text-indent: -1em;
+  max-width: 1040px;
+  word-break: break-word;
+}
+#loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loading {
+  height: 50px;
+  aspect-ratio: 2;
+  border: 10px solid #ffffff;
+  box-sizing: border-box;
+  background:
+    radial-gradient(farthest-side, #000000 98%, #ffffff) left/20px 20px,
+    radial-gradient(farthest-side, #000000 98%, #ffffff) left/20px 20px,
+    radial-gradient(farthest-side, #000000 98%, #ffffff) center/20px 20px,
+    radial-gradient(farthest-side, #000000 98%, #ffffff) right/20px 20px,
+    #ffffff;
+  background-repeat: no-repeat;
+  filter: blur(4px) contrast(10);
+  animation: l14 1s infinite;
+}
+@keyframes l14 {
+  100% {
+    background-position: right, left, center, right;
+  }
+}

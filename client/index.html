@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Tool</title>
+    <link rel="icon" type="image/png" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div id="bodyContainer">
+      <div id="firstHeader"><h3>Generate Questions from PowerPoint</h3></div>
+
+      <form id="uploadForm">
+        <div id="secondHeader"><h4>Upload Your PowerPoint</h4></div>
+
+        <label id="fileInputContainer"
+          ><input
+            id="fileInput"
+            onChange="clearQuestions()"
+            type="file"
+            name="powerpoint"
+            accept=".ppt, .pptx"
+        /></label>
+        <div id="generateButtonContianer">
+          <input id="generateButton" type="submit" value="Generate Questions" />
+        </div>
+      </form>
+      <div style="display: none" id="loadingContainer">
+        Generating Questions
+
+        <div class="loading"></div>
+      </div>
+      <form id="quizForm">
+        <div id="questionContainer"></div>
+        <div id="submitButtonContianer">
+          <button id="submitButton" type="submit" style="display: none">
+            Submit Answers
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
