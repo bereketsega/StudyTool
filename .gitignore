@@ -1,0 +1,8 @@
+# Ignore environment variables
+.env
+
+# Ignore Node.js projects
+node_modules/
+
+# Ignore Mac environment files
+.DS_Store
